@@ -1,0 +1,129 @@
+.loginScreen {
+    position: relative;
+    height: 100%;
+}
+
+.loginScreen__backgroundImage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.loginScreen__gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, .8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, .8) 100%
+    );
+}
+
+
+.loginScreen__logo {
+    position: fixed;
+    top: 25px;
+    left: 3.5rem;
+    width: 8.375rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.loginScreen__button {
+    position: fixed;
+    top: 25px;
+    right: 3.5rem;
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    border-radius: .5vw;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ca0812;
+    cursor: pointer;
+}
+
+.loginScreen__button:hover {
+    background-color: #e50914;
+    outline: 1px solid #fff;
+    transition: all .2s;
+}
+
+
+.loginScreen__body {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0 30px;
+    max-width: 950px;
+    text-align: center;
+    z-index: 1;
+}
+
+.loginScreen__body > h1 {
+    font-size: 3.125rem;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.loginScreen__body > h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+.loginScreen__body > h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.loginScreen__input > form {
+    margin: 0 auto;
+    max-width: 950px;
+    display: flex;
+    padding: 0 8rem;
+}
+
+.loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    border: none;
+    width: 50%;
+    max-width: 600px;
+    font-size: 1rem;
+    flex: 1 0 auto;
+}
+
+.loginScreen__getStarted {
+    font-size: 1.5em;
+    padding: 16px 20px;
+    max-width: 200px;
+    border: none;
+    outline: 1px solid #a1030b;
+    color: #fff;
+    background-color: #ca0812;
+    cursor: pointer;
+    flex: 1 0 auto;
+
+}
+
+.loginScreen__getStarted:hover {
+    background-color: #e50914;
+    outline: 1px solid #fff;
+    transition: all .2s;
+}
+
+.loginScreen__input {
+    margin: 20px;
+}

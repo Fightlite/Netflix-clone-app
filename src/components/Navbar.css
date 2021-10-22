@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.navbar__black {
+    background-color: #111;
+
+    transition-timing-function: ease-in;
+    transition: all .5s;
+}
+
+
+.navbar__contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    position: fixed;
+    left: 20px;
+    padding-left: 20px;
+    width: 8.375rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.navbar__avatar {
+    position: fixed;
+    right: 20px;
+    padding-right: 20px;
+    width: 40px;
+    object-fit: contain;
+    cursor: pointer;
+}
